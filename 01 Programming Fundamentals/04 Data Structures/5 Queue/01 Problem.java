@@ -1,8 +1,7 @@
 import java.util.*;
 /*
  * Implement Queue using ArrayDeque Deque interface methods only.
- * ArrayDeque extends Deque which extends Queue interface. It has methods for both
- * Queue & Deque.
+ * ArrayDeque extends Deque which extends Queue interface. It has methods for both Queue & Deque.
  * 
  * Your goal is to create Custom Queue class (MyQueue) using only Deque methods.
  * We can only implement the version that return null (Doesn't throw exceptions) if

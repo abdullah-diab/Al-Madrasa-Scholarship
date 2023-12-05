@@ -18,7 +18,6 @@ import java.util.Arrays;
  * Original ArrayList Interface for reference:
  * https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
  * 
- * 
  * Bonus 1:
  * Create two additional constructors
  * One accepts initial size. In this case you initialize with

@@ -14,7 +14,6 @@ class MyStack {
 
     /**
      * Calculates the number of elements that exist in the stack so far.
-     *
      * @return The number of elements existing in the stack.
      */
     public int size() {
