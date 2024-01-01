@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+  background-size: 10px 10px;
+}
+
+.lights-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 20px;
+}
+
+.lights-lable {
+  width: 42px;
+  height: 22px;
+  border-radius: 15px;
+  background-color: #000;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 3px 4px;
+}
+
+.lights-lable::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.lights-input {
+  display: none;
+}
+
+.lights-input:checked + .lights-lable {
+  background-color: #fff;
+}
+
+.lights-input:checked + .lights-lable::after {
+  background-color: rgb(1, 200, 15);
+  transform: translateX(18px);
+}
+
+.container:has(.lights-input:checked) {
+  background-color: #0b0b0b;
+  opacity: 0.8;
+  background-image: radial-gradient(#069797 0.5px, #0b0b0b 0.5px);
+  background-size: 10px 10px;
+  color: #fff;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  min-width: 500px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.head {
+  height: 130px;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #e5e5f7 10px
+    ),
+    repeating-linear-gradient(#444cf755, #444cf7);
+}
+
+.pic {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin-bottom: 6px;
+}
+
+.main {
+  margin: -60px auto 30px;
+  text-align: center;
+  z-index: 1;
+  color: #000;
+}
+
+.main p {
+  font-size: 14px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.foot {
+  display: flex;
+  border-top: 1px solid #c4c4c4;
+}
+
+.box {
+  flex: 1;
+  padding: 18px 15px;
+  text-align: center;
+}
+
+.box:nth-child(2) {
+  border-left: 1px solid #c4c4c4;
+  border-right: 1px solid #c4c4c4;
+}
+
+span {
+  font-size: 14px;
+  color: #444;
+  cursor: pointer;
+}
