@@ -315,6 +315,10 @@ body {
     gap: var(--default-padding);
   }
 
+  .section:nth-of-type(1) .section__title {
+    font-size: 3.2rem;
+  }
+
   .section__content {
     flex: 1;
   }
